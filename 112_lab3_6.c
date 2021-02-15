@@ -14,17 +14,24 @@ int main()
         r*=10;
         r=r+t%10;
         t/=10;
-    }
-    if(r==num)
-    {
-        d=(int)sqrt(n);
-        for(c=2;c<=d;c++)
+        if(r==num)
         {
-            if(n%c==0)
+            d=(int)sqrt(n);
+            for(c=2;c<=d;c++)
+            {
+                if(n%c==0)
+                {
+                    break;
+                }
+            }
+            if(c==d+1)
             {
                 break;
             }
         }
+        r=0;
     }
+
+
 
 }
