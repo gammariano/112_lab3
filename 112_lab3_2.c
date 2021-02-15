@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int x,i,j,max=0;
+    int n,x,i,j,max=0;
     scanf("%d" ,&n);
     int p[n],a[n];
     for(i=0;i<n;i++)
@@ -10,17 +10,16 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        for(i=0;i<n;i++)
+
+        if(p[i]==p[i+1])
         {
-            if(p[i]==p[i+1])
-            {
-                a[i]=a[i+1];
-            }
-            if(max<a[i])
-            {
-                max=a[i];
-                x=i+1;
-            }
+            a[i]+=a[i+1];
+        }
+        if(a[i]>max)
+        {
+            max=a[i];
+            x=i+1;
         }
     }
+    printf("%d %d" ,x,max);
 }
