@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include<math.h>
 int main()
 {
     int num,t,c,d,r=0;
     scanf("%d" ,&num);
-    while(1)
+    while(num>=1)
     {
         num--;
         t=num;
@@ -16,7 +15,7 @@ int main()
         }
         if(r==num)
         {
-            d=sqrt(num);
+            d=num/2.0;
             for(c=2;c<=d;c++)
             {
                 if(num%c==0)
