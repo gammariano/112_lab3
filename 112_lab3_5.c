@@ -14,7 +14,20 @@ int main()
                 c++;
                 break;
             }
+            else if(x%i==1)
+            {
+                break;
+            }
         }
+        if(c==1)
+        {
+            break;
+        }
+        i++;
+    }
+    if(c==0)
+    {
+
     }
 
 }
