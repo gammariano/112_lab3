@@ -9,5 +9,11 @@ int main()
         num++;
         t=num;
     }
+    while(t)
+    {
+        r*=10;
+        r=r+t%10;
+        t/=10;
+    }
 
 }
