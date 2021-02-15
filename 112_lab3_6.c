@@ -15,5 +15,16 @@ int main()
         r=r+t%10;
         t/=10;
     }
+    if(r==num)
+    {
+        d=(int)sqrt(n);
+        for(c=2;c<=d;c++)
+        {
+            if(n%c==0)
+            {
+                break;
+            }
+        }
+    }
 
 }
