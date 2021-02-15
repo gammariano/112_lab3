@@ -16,7 +16,7 @@ int main()
             win=i;
         }
     }
-
+    printf("%d %d\n" ,win,max);
 
     return 0;
 }
