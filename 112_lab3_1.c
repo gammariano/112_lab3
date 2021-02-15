@@ -5,11 +5,18 @@ int main()
     for(i=1;i<=5;i++)
     {
         count=0;
+        for(j=0;j<4;j++)
+        {
+            scanf("%d" ,&k);
+            count+=k;
+        }
+        if(count>max)
+        {
+            max=count;
+            win=i;
+        }
     }
-    for(j=0;j<4;j++)
-    {
-        scanf("%d" ,&k);
-        count+=k;
-    }
-    if()
+
+
+    return 0;
 }
