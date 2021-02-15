@@ -2,24 +2,24 @@
 #include<math.h>
 int main()
 {
-    int num,t,c,d,dr=0;
+    int num,t,c,d,r=0;
     scanf("%d" ,&num);
     while(1)
     {
-        num++;
+        num--;
         t=num;
-    }
-    while(t)
-    {
-        r*=10;
-        r=r+t%10;
-        t/=10;
+        while(t)
+        {
+            r*=10;
+            r=r+t%10;
+            t/=10;
+        }
         if(r==num)
         {
-            d=(int)sqrt(n);
+            d=(int)sqrt(num);
             for(c=2;c<=d;c++)
             {
-                if(n%c==0)
+                if(num%c==0)
                 {
                     break;
                 }
@@ -31,7 +31,6 @@ int main()
         }
         r=0;
     }
-
-
-
+    printf("%d\n" ,num);
+    return 0;
 }
