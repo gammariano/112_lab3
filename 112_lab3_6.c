@@ -16,7 +16,7 @@ int main()
         }
         if(r==num)
         {
-            d=(int)sqrt(num);
+            d=sqrt(num);
             for(c=2;c<=d;c++)
             {
                 if(num%c==0)
