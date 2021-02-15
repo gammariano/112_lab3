@@ -7,7 +7,13 @@ int main()
     {
         if(num%i==0)
         {
-
+            while(num%i==0)
+            {
+                printf("%d\n" ,i);
+                num/=i;
+            }
         }
+        i++;
     }
+    return 0;
 }
