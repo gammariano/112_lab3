@@ -27,7 +27,11 @@ int main()
     }
     if(c==0)
     {
-
+        printf("%d is a Lucky Number" ,num);
     }
-
+    else if(c==1)
+    {
+        printf("%d is not a Lucky Number" ,num);
+    }
+    return 0;
 }
