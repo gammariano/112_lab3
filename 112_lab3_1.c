@@ -9,6 +9,7 @@ int main()
     for(j=0;j<4;j++)
     {
         scanf("%d" ,&k);
-        sum+=k;
+        count+=k;
     }
+    if()
 }
