@@ -8,4 +8,14 @@ int main()
     {
         scanf("%d %d" ,&p[i],&a[i]);
     }
+    for(i=0;i<n;i++)
+    {
+        for(i=0;i<n;i++)
+        {
+            if(p[i]==p[i+1])
+            {
+                a[i]=a[i+1];
+            }
+        }
+    }
 }
